@@ -1,5 +1,8 @@
 FROM python
 
+LABEL org.opencontainers.image.source https://github.com/djharshit/temp-check
+LABEL maintainer = "Harshit M"
+
 WORKDIR /home/app
 
 COPY . .
