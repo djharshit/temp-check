@@ -4,13 +4,13 @@ from os import environ
 app = Flask(__name__)
 
 CLIENT_ID = environ.get("CLIENT_ID", "")
-CLIENT_HASG = environ.get("CLIENT_HASG", "")
+CLIENT_HASH = environ.get("CLIENT_HASH", "")
 PORT = int(environ.get("PORT", 5000))
 
 
 @app.route("/")
 def hello_world():
-    return f"Hello, World! {CLIENT_ID} {CLIENT_HASG}"
+    return f"Hello, World! {CLIENT_ID} {CLIENT_HASH}"
 
 
 if __name__ == "__main__":
