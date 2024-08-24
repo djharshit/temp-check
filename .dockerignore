@@ -1,5 +1,7 @@
 __pycache__/
 .git/
+.github/
+.gitignore
 .env
 .env*
 .flaskenv*

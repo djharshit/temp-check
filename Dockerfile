@@ -1,4 +1,4 @@
-FROM python
+FROM python:3.11-slim
 
 LABEL org.opencontainers.image.source="https://github.com/djharshit/temp-check"
 LABEL maintainer="Harshit M"
@@ -7,6 +7,8 @@ WORKDIR /home/app
 
 COPY . .
 
-RUN pip install -r requirements.txt
+RUN chmod +x install.sh && chmod +x run.sh && ./install.sh
 
-CMD [ "python3", "server.py" ]
+EXPOSE $PORT
+
+CMD [ "./run.sh" ]
