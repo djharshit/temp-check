@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Prevent command with Service Token being recorded in bash history
 # export DOPPLER_TOKEN='dp.st.prd.xxxx'
