@@ -1,1 +1,1 @@
-doppler run -- gunicorn -w 3 -b 0.0.0.0 server:app
+doppler run -- gunicorn -w 3 -b :$PORT server:app
